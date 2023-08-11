@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Icons";
+  src: url("../fonts/icons.woff") format("woff");
+}
+header {
+  background-color: rgb(14, 182, 2);
+}
+
+.header__wrapper {
+  max-height: 148px;
+}
+.header__wrapper .header__logo {
+  font-family: Icons;
+  text-transform: none;
+  color: #FFFFFF;
+}/*# sourceMappingURL=header.css.map */

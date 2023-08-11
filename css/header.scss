@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "Icons";
+    src: url("../fonts/icons.woff") format("woff");
+  }
+  
+  $content-width: 1140px;
+  $background-color: #121212 ;
+  $font-main-title-size: 36px;
+  $font-main-casual-text-size: 16px;
+  
+  $maxWidth: 1440;
+  @mixin adaptive-font($pcSize, $mobSize) {
+    $addSize: $pcSize - $mobSize;
+    $maxWidth: $maxWidth - 375;
+    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 375px) / #{$maxWidth}));
+  }
+
+header{background-color: rgb(14, 182, 2);}
+.header__wrapper{
+    max-height: 148px;
+    .header__logo{
+        font-family: Icons;
+        text-transform: none;
+        color: #FFFFFF;
+    }
+}

@@ -2,6 +2,7 @@ body {
   margin: 0 auto;
   max-width: 1440px;
   background-color: rgb(182, 2, 2);
-  width: 100%;
-  height: 100%;
+}
+body .page__wrapper {
+  display: grid;
 }/*# sourceMappingURL=index.css.map */
